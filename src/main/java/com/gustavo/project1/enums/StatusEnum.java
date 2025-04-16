@@ -1,4 +1,4 @@
-package com.gustavo.project1.model.enums;
+package com.gustavo.project1.enums;
 
 public enum StatusEnum {
     PENDING,

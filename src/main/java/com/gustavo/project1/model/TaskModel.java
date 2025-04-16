@@ -3,9 +3,10 @@ package com.gustavo.project1.model;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import com.gustavo.project1.model.enums.StatusEnum;
+import com.gustavo.project1.enums.StatusEnum;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -27,7 +28,7 @@ public class TaskModel {
     private StatusEnum statusEnum;
 
     @Column(nullable = false)
-    private Date date;
+    private LocalDateTime date;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
